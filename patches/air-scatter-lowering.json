@@ -1,0 +1,50 @@
+name: "Air - Scatter Rework Set"    
+    // Air - Scatter Rework Set // {
+        // Details: {
+            // Scatter and Air has been both toned down so that the power disparity between air and ground is less.
+        // }
+
+        // SCATTER {
+            block.scatter: {
+                requirements: ["copper/75", "lead/35"]
+                ammoTypes: {
+                    scrap: {        splashDamage: 12
+                                    splashDamageRadius: 26
+                                    scaledSplashDamage: true
+                                    rangeChange: 32
+                                    speed: 6
+                    }
+                    lead: {         splashDamage: 18
+                                    splashDamageRadius: 10
+                                    scaledSplashDamage: true
+                                    speed: 6
+                    }
+                    metaglass: {    splashDamage: 20
+                                    splashDamageRadius: 12
+                                    scaledSplashDamage: true
+                                    fragBullet.damage: 9
+                                    speed: 6
+                    }
+                }
+            }
+            // Details
+                // Both weaknening and ammo balance, along side reduced cost.
+                // The main things to preserve is at least scatter w/ aoe is more or less cost effective than its air-ground counterparts
+                // Scrap has became a decent coverage (from rarity) anti flare option
+                // Lead is an okay ammo type for T1-T2
+                // Metaglass is the main heavy weight and can help somewhat for zeniths
+                // TODO reanalysis and testing
+        // }
+
+        // Major Vitality nerfs.. Approximately 1/2
+            unit.flare.health: 50
+            
+            unit.horizon.health: 170
+        // ---
+
+        // The air-ground turrets gain a bit of capability to cover the fast speeds of air.
+            block.duo.ammoTypes.silicon.speed: 4
+            block.salvo.ammoTypes.silicon.speed: 4
+        // ---
+    
+    // }
